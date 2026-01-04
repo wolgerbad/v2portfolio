@@ -12,19 +12,18 @@ export default function AboutMe() {
         <div className="flex flex-col gap-4 text-lg justify-between">
           <p>
             Hello, I'm Emir, a web developer from Turkey. I’ve been in the web
-            my entire life, always been a type of person who wanted to know why
-            and how things work since my childhood. I believe that curiosity led
-            me into development, and that's where the story began.
+            my entire life, always been a kind of person who wanted to know why
+            and how things work since my childhood. That curiosity eventually
+            led me down the rabbit hole of web development.
           </p>
           <p>
-            I have around three years of experience in software development,
-            primarily focusing on front-end technologies. Recently, exploring
-            Nodejs, Express and MongoDB in order to expand my skills across both
-            stacks
+            My primary focus is on front-end technologies. Although, recently i
+            am also exploring backend technologies in order to expand my skills
+            across both stacks
           </p>
           <p>
-            When I’m not coding, I’m usually reading, staying active, or lost in
-            some psychedelic rock. Feel free to check out my{' '}
+            When I’m not coding, I’m usually reading, staying active or
+            listening some music. You can also check out my{' '}
             <a
               href="https://open.spotify.com/user/21gjhghjhkkymdu4fxn5ta3py"
               className="group text-neutral-700 transition-all duration-300 ease-in-out font-medium cursor-pointer"

@@ -7,11 +7,11 @@ export default function Projects() {
     {
       name: 'Habitland',
       overview:
-        'Full-stack habit tracking app with authentication, progress tracking, and optimistic UI.',
+        'Full-stack habit tracking application featuring secure authentication, daily progress tracking and optimistic UI updates for a fast, distraction-free user experience. Built with a responsive, dark-mode–ready interface and a REST API backed by a relational database.',
       stack: ['Next.js', 'PostgreSQL', 'JWT', 'Context API', 'TailwindCSS'],
       github: 'https://github.com/wolgerbad/habitland',
       image:
-        'https://rjmixcltcmxukccddxxt.supabase.co/storage/v1/object/public/blog_images/habitland-dark.png',
+        'https://rjmixcltcmxukccddxxt.supabase.co/storage/v1/object/public/blog_images/habit_land_current.png',
 
       orderCart: 1,
       orderImage: 2,
@@ -32,10 +32,10 @@ export default function Projects() {
     {
       name: 'Next Blog',
       overview:
-        'Full-stack blog platform with role-based authentication, PostgreSQL, and optimistic UI updates.',
+        'Full-stack blog platform featuring secure authentication, protected user interactions, and optimistic UI updates for a smooth user experience. Built with an admin dashboard for content management and a REST API backed by a relational database.',
       stack: ['Next.js', 'PostgreSQL', 'Next Auth', 'TailwindCSS'],
       image:
-        'https://rjmixcltcmxukccddxxt.supabase.co/storage/v1/object/public/blog_images/blogapp.png',
+        'https://rjmixcltcmxukccddxxt.supabase.co/storage/v1/object/public/blog_images/Gemini_Generated_Image_xmz5xqxmz5xqxmz5.png',
 
       github: 'https://github.com/wolgerbad/blog',
       orderCart: 2,
@@ -53,9 +53,9 @@ export default function Projects() {
       demoLink: 'https://next-react-blogapp.vercel.app/',
     },
     {
-      name: 'moviecorn',
+      name: 'Moviecorn',
       overview:
-        'Single-page movie discovery app with search, favorites, and smooth client-side navigation.',
+        'Single-page movie and TV show discovery application featuring searchable content, user-curated favorites and client-side state management. Built with accessible routing, centralized global state and optimized data fetching with caching using React Query to deliver a fast, responsive experience.',
       stack: [
         'React',
         'React Router',
@@ -64,7 +64,7 @@ export default function Projects() {
         'TailwindCSS',
       ],
       image:
-        'https://rjmixcltcmxukccddxxt.supabase.co/storage/v1/object/public/blog_images/currentcorn.png',
+        'https://rjmixcltcmxukccddxxt.supabase.co/storage/v1/object/public/blog_images/Gemini_Generated_Image_n1ciztn1ciztn1ci.png',
       github: 'https://github.com/wolgerbad/moviecorn',
       orderCart: 1,
       orderImage: 2,
@@ -82,11 +82,11 @@ export default function Projects() {
     {
       name: 'Trello Like',
       overview:
-        'Kanban-style task management app with real-time updates and database persistence.',
+        'Trello-inspired task management application featuring authenticated users, structured boards, columns, cards and optimistic UI updates for instant drag-and-drop interactions. Built with a relational PostgreSQL backend and a responsive interface designed for smooth, real-time task organization.',
       stack: ['Next.js', 'Better Auth', 'PostgreSQL'],
       github: 'https://github.com/wolgerbad/trello-like',
       image:
-        'https://rjmixcltcmxukccddxxt.supabase.co/storage/v1/object/public/blog_images/trellocur.png',
+        'https://xjlakfmpndqhejusdjij.supabase.co/storage/v1/object/public/images/Gemini_Generated_Image_9597vq9597vq9597.png',
       orderCart: 2,
       orderImage: 1,
       technicalDetails: [
@@ -105,11 +105,11 @@ export default function Projects() {
     {
       name: 'Recipedia',
       overview:
-        'Recipe search and discovery app with detailed views and favorites management.',
+        'Recipe discovery application featuring searchable recipes, saved favorites and client-side state updates for a smooth browsing experience. Built with API-driven data fetching and a clean, readable interface focused on easy navigation and usability.',
       stack: ['Nextjs'],
       github: 'https://github.com/wolgerbad/recipe-app',
       image:
-        'https://rjmixcltcmxukccddxxt.supabase.co/storage/v1/object/public/blog_images/recipediacur%20(1).png',
+        'https://xjlakfmpndqhejusdjij.supabase.co/storage/v1/object/public/images/ChatGPT%20Image%20Jan%204,%202026,%2004_46_09%20PM.png',
       orderCart: 1,
       orderImage: 2,
       technicalDetails: [
@@ -124,32 +124,15 @@ export default function Projects() {
       projectColor: 'bg-amber-600',
       demoLink: 'https://recipe-app-ten-flax.vercel.app/',
     },
-    {
-      name: 'The React Quiz',
-      overview:
-        'Interactive quiz app that tests users’ React.js knowledge with real-time scoring.',
-      stack: ['React', 'Typescript', 'Context API'],
-      github: 'https://github.com/wolgerbad/react-quiz-app',
-      image:
-        'https://rjmixcltcmxukccddxxt.supabase.co/storage/v1/object/public/blog_images/rquiz.png',
-      technicalDetails: [
-        'Built an interactive quiz application to let users test their React.js knowledge and view their score in real time.',
-        'Used TypeScript to add static type checking and improve code reliability throughout the app.',
-        'Managed global and local state with React Context API to handle quiz progress, selected answers, and final scoring.',
-        'Fetched and rendered question data dynamically using useEffect and React hooks for controlled component updates.',
-        'Implemented conditional rendering to display questions, results, and feedback based on user actions.',
-        'Styled the interface with TailwindCSS for clean user experience.',
-      ],
-      projectColor: 'bg-sky-700',
-      demoLink: 'https://react-quiz-app-rouge-tau.vercel.app/',
-    },
   ];
   return (
     <div id="projects" className="scroll-mt-20">
-      <h1 className="text-2xl font-bold mb-4">Projects</h1>
-      {projects.map((project) => (
-        <Project key={project.name} project={project} />
-      ))}
+      <h1 className="text-2xl font-bold mb-4 underline uppercase">Projects</h1>
+      <div className="flex flex-col gap-8">
+        {projects.map((project) => (
+          <Project key={project.name} project={project} />
+        ))}
+      </div>
     </div>
   );
 }

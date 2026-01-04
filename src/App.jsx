@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="max-w-4xl w-full mx-auto pt-28 sm:pt-32 sm:px-6 text-neutral-900 dark:text-neutral-100 px-10">
+      <div className="max-w-4xl w-full mx-auto pt-28 sm:pt-32 sm:px-6 text-neutral-900 dark:text-neutral-100 px-4  ">
         <Hero />
         <AboutMe />
         <Projects />
