@@ -13,11 +13,11 @@ export default function Hero() {
   return (
     <div
       id="home"
-      className="grid grid-cols-1 md:grid-cols-3 mb-30 scroll-mt-40 gap-4 md:gap-8 text-center md:text-start"
+      className="grid grid-cols-1 md:grid-cols-3 mb-15 sm:mb-20 lg:mb-30 scroll-mt-40 gap-4 md:gap-8 text-center md:text-start"
     >
       <div className="order-2 md:order-1 md:col-start-1 md:col-span-2 flex flex-col gap-10 justify-between">
         <div>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-wide mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-wide mb-2">
             Emir Işık
           </h1>
           <h2 className="text-3xl md:text-4xl font-semibold mb-6">
@@ -76,7 +76,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="order-1 md:order-2 md:pt-4 ">
+      <div className="order-1 md:order-2 md:pt-4 xs:max-lg:px-4 ">
         <img
           loading="lazy"
           className="rounded-full "

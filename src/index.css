@@ -19,6 +19,7 @@ body {
   margin: 0;
 }
 
-/* @theme {
-  --breakpoint-md: 45rem;
-} */
+@theme {
+  --breakpoint-xs: 0rem;
+  --breakpoint-md: 700px;
+}

@@ -1,11 +1,8 @@
 import { FaGithub } from 'react-icons/fa';
-import Card from './Card';
 import { useState, useEffect } from 'react';
-import { MdLiveTv } from 'react-icons/md';
 import { FiExternalLink } from 'react-icons/fi';
 
 export default function Project({ project }) {
-  console.log(project);
   const { name, overview, image, stack, demoLink } = project;
   const [isDesktop, setIsDesktop] = useState(() => {
     if (typeof window === 'undefined') return true;
@@ -46,17 +43,17 @@ export default function Project({ project }) {
       </div>
       <div className="flex flex-col gap-2 order-1 md:order-2">
         <div className="flex-1">
-          <div className="flex items-center gap-3">
+          <div>
             <a
               href={demoLink}
               target="_blank"
-              className="text-3xl font-semibold"
+              className="text-3xl font-semibold flex items-center gap-3"
             >
               {name}
+              <span className="text-xl text-black group-hover:-translate-y-1 group-hover:translate-x-1 transition-all ease delay-50">
+                <FiExternalLink />
+              </span>
             </a>
-            <span className="text-xl text-black group-hover:-translate-y-1 group-hover:translate-x-1 transition-all ease delay-50">
-              <FiExternalLink />
-            </span>
           </div>
 
           <p className="text-gray-800 mt-1">{overview}</p>

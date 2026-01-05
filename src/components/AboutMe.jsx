@@ -2,7 +2,7 @@ export default function AboutMe() {
   return (
     <div id="about" className="scroll-mt-20">
       <h2 className="font-bold text-2xl mb-4">About</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-30">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-15 sm:mb-20 lg:mb-30">
         <div>
           <img
             className="max-h-[30rem] w-full object-cover rounded-md"
