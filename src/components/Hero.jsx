@@ -29,10 +29,16 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex gap-3 justify-center md:justify-start">
-          <a href="#" className="text-4xl hover:text-sky-400">
+          <a
+            href="https://github.com/wolgerbad/"
+            className="text-4xl hover:text-sky-400"
+          >
             <FaGithub />
           </a>
-          <a href="#" className="text-4xl hover:text-sky-400">
+          <a
+            href="https://www.linkedin.com/in/emir-isik/"
+            className="text-4xl hover:text-sky-400"
+          >
             <FaLinkedin />
           </a>
         </div>
