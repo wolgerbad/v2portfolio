@@ -31,12 +31,14 @@ export default function Hero() {
         <div className="flex gap-3 justify-center md:justify-start">
           <a
             href="https://github.com/wolgerbad/"
+            target="_blank"
             className="text-4xl hover:text-sky-400"
           >
             <FaGithub />
           </a>
           <a
             href="https://www.linkedin.com/in/emir-isik/"
+            target="_blank"
             className="text-4xl hover:text-sky-400"
           >
             <FaLinkedin />
