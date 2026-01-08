@@ -34,7 +34,7 @@ export default function Navbar() {
         <li>
           <a
             className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white"
-            href="https://drive.google.com/file/d/1nDRc-P5QVniDhwKQwS1i3smjE_2WCohJ/view?usp=sharing"
+            href="https://drive.google.com/file/d/1I_JGnOF26lkaF-BUDBv1V_8FDqzEJjCD/view?usp=sharing"
             target="_blank"
           >
             Resume
