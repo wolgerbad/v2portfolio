@@ -5,6 +5,28 @@ import Project from './Project';
 export default function Projects() {
   const projects = [
     {
+      name: 'The Aurora',
+      overview:
+        'A full-stack booking platform built with Next.js and TypeScript that enables users to browse, filter, and reserve luxury rooms. Features secure authentication, real-time availability management, and user dashboard.',
+      stack: ['Nextjs', 'Typescript', 'TailwindCSS', 'MySQL'],
+      github: 'https://github.com/wolgerbad/booking-app',
+      image:
+        'https://rjmixcltcmxukccddxxt.supabase.co/storage/v1/object/public/blog_images/aurora_home.png',
+      orderCart: 1,
+      orderImage: 2,
+      technicalDetails: [
+        'Built a web application to let users search, explore, and save recipes from different cuisines around the world.',
+        'Integrated a public recipe API to fetch detailed recipe data including ingredients, preparation steps, and images.',
+        'Implemented local state management to handle search results, favorites, and user interactions.',
+        'Added search functionality to filter recipes by keywords for faster and more accurate results.',
+        'Designed a simple and readable layout for browsing and viewing recipe details.',
+        'Styled the interface with TailwindCSS for clean user experience.',
+        'Focused on creating a smooth user experience with quick data fetching and clean navigation.',
+      ],
+      projectColor: 'bg-amber-600',
+      demoLink: 'https://theaurora.vercel.app/',
+    },
+    {
       name: 'Habitland',
       overview:
         'Full-stack habit tracking application featuring secure authentication, daily progress tracking and optimistic UI updates for a fast, distraction-free user experience. Built with a responsive, dark-mode–ready interface and a REST API backed by a relational database.',
@@ -124,6 +146,7 @@ export default function Projects() {
       projectColor: 'bg-amber-600',
       demoLink: 'https://recipe-app-ten-flax.vercel.app/',
     },
+
   ];
   return (
     <div id="projects" className="scroll-mt-20">

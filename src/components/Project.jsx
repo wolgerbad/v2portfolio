@@ -41,7 +41,7 @@ export default function Project({ project }) {
           className="w-full md:w-90 md:max-w-90 aspect-video"
         />
       </div>
-      <div className="flex flex-col gap-2 order-1 md:order-2">
+      <div className="flex flex-col gap-3 order-1 md:order-2">
         <div className="flex-1">
           <div>
             <a
