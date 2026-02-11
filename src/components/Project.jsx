@@ -25,44 +25,48 @@ export default function Project({ project }) {
   const wrapperProps = isDesktop
     ? {
         className:
-          'flex flex-col md:flex-row gap-6 hover:bg-black/5 md:p-8 rounded-lg group',
+          'card-elevated flex flex-col md:flex-row gap-5 md:gap-6 p-4 sm:p-5 md:p-6 lg:p-7 rounded-2xl border border-slate-700/70 bg-slate-900/70 group',
         target: '_blank',
         rel: 'noopener noreferrer',
         href: demoLink,
       }
-    : { className: 'flex flex-col md:flex-row gap-4 md:p-8 rounded-lg group' };
+    : {
+        className:
+          'card-elevated flex flex-col gap-5 p-4 sm:p-5 rounded-2xl border border-slate-700/70 bg-slate-900/70 group',
+      };
 
   return (
     <Tag {...wrapperProps}>
-      <div className="order-2 md:order-1">
+      <div className="order-2 md:order-1 md:basis-[46%]">
         <img
           src={image}
           alt={name}
-          className="w-full md:w-90 md:max-w-90 aspect-video"
+          className="w-full aspect-video rounded-xl border border-slate-600/60 object-cover shadow-[0_18px_40px_rgba(15,23,42,0.9)] transition group-hover:border-sky-400/70"
         />
       </div>
-      <div className="flex flex-col gap-3 order-1 md:order-2">
+      <div className="flex flex-col gap-3 order-1 md:order-2 md:flex-1">
         <div className="flex-1">
           <div>
             <a
               href={demoLink}
               target="_blank"
-              className="text-3xl font-semibold flex items-center gap-3"
+              rel="noreferrer"
+              className="text-2xl sm:text-3xl font-semibold flex items-center gap-3 text-slate-50"
             >
               {name}
-              <span className="text-xl text-black group-hover:-translate-y-1 group-hover:translate-x-1 transition-all ease delay-50">
+              <span className="text-lg sm:text-xl text-sky-300 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform ease-out">
                 <FiExternalLink />
               </span>
             </a>
           </div>
 
-          <p className="text-gray-800 mt-1">{overview}</p>
+          <p className="text-slate-300 mt-1 text-sm sm:text-base">{overview}</p>
         </div>
-        <div className="flex gap-2 flex-wrap text-gray-100">
+        <div className="flex gap-2 flex-wrap text-slate-100">
           {stack.map((stack, idx) => (
             <span
               key={idx}
-              className={`px-4 py-1 rounded-full bg-black/10 text-black font-semibold`}
+              className="px-3 py-1 rounded-full bg-slate-800/80 text-xs sm:text-[13px] font-medium text-slate-100/90 border border-slate-600/70 group-hover:border-sky-400/60"
             >
               {stack}
             </span>

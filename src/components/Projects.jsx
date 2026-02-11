@@ -1,5 +1,3 @@
-import { FaGithub } from 'react-icons/fa';
-import Card from './Card';
 import Project from './Project';
 
 export default function Projects() {
@@ -149,13 +147,25 @@ export default function Projects() {
 
   ];
   return (
-    <div id="projects" className="scroll-mt-20">
-      <h1 className="text-2xl font-bold mb-4 underline uppercase">Projects</h1>
-      <div className="flex flex-col gap-8">
+    <section id="projects" className="scroll-mt-24">
+      <header className="mb-8 flex flex-col gap-2">
+        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+          Selected work
+        </p>
+        <h2 className="text-2xl sm:text-3xl font-semibold text-slate-50">
+          Portfolio projects
+        </h2>
+        <p className="max-w-2xl text-sm sm:text-base text-slate-400">
+          Real products shipped with authentication, databases and clean,
+          maintainable frontends. Built with a focus on robustness, DX and user experience.
+        </p>
+      </header>
+
+      <div className="flex flex-col gap-6 sm:gap-8">
         {projects.map((project) => (
           <Project key={project.name} project={project} />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
