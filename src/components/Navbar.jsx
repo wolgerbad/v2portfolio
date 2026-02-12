@@ -40,7 +40,7 @@ export default function Navbar() {
               Open to roles
             </span>
             <a
-              href="https://drive.google.com/file/d/1I_JGnOF26lkaF-BUDBv1V_8FDqzEJjCD/view?usp=sharing"
+              href="https://drive.google.com/file/d/1x2ZySTWzt-4RpxwbYGNFTDvJ7X9452_M/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="rounded-full bg-slate-100 px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-semibold text-slate-900 shadow-lg shadow-sky-500/30 transition hover:-translate-y-[1px] hover:bg-sky-100"
