@@ -9,40 +9,8 @@ export default function AboutMe() {
           <div className="pointer-events-none absolute -top-16 -left-10 h-32 w-32 rounded-full bg-sky-500/25 blur-3xl" />
           <div className="pointer-events-none absolute -bottom-20 -right-10 h-40 w-40 rounded-full bg-fuchsia-500/25 blur-3xl" />
 
-          <div className="relative flex h-full flex-col justify-between gap-5 p-5 md:p-6 text-slate-100">
-            <div>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400">
-                Profile
-              </p>
-              <p className="mt-2 text-lg md:text-xl font-semibold">
-                Web developer based in Turkey
-              </p>
-              <p className="mt-2 text-xs md:text-sm text-slate-300 max-w-xs">
-                Building reliable web experiences with modern JavaScript, React,
-                and TypeScript, from clean UIs to solid data layers.
-              </p>
-            </div>
-
-            <div className="mt-2 grid grid-cols-2 gap-3 text-xs md:text-sm">
-              <div className="rounded-xl border border-slate-700/80 bg-slate-900/80 px-3 py-2">
-                <p className="text-[10px] uppercase tracking-[0.18em] text-slate-500">
-                  Focus
-                </p>
-                <p className="mt-1 font-semibold text-slate-50">Frontend & UX</p>
-                <p className="mt-0.5 text-[11px] text-slate-400">
-                  Accessible, maintainable interfaces.
-                </p>
-              </div>
-              <div className="rounded-xl border border-slate-700/80 bg-slate-900/80 px-3 py-2">
-                <p className="text-[10px] uppercase tracking-[0.18em] text-slate-500">
-                  Strengths
-                </p>
-                <p className="mt-1 font-semibold text-slate-50">Systems thinking</p>
-                <p className="mt-0.5 text-[11px] text-slate-400">
-                  From API design to component trees.
-                </p>
-              </div>
-            </div>
+          <div className="relative h-full text-slate-100">
+              <img src="https://rjmixcltcmxukccddxxt.supabase.co/storage/v1/object/public/blog_images/portfolio_about.png" alt="" className="h-full object-cover" />
           </div>
         </div>
         <div className="flex flex-col gap-4 md:gap-5 text-sm sm:text-base text-slate-300">
@@ -55,7 +23,7 @@ export default function AboutMe() {
             My main focus is on <span className="text-fuchsia-300">front‑end engineering.</span> React, Next.js,
             TypeScript and modern CSS. Recently I’ve been going deeper into backend work
             as well, designing APIs and working with relational databases so I can own a
-            feature from database schema to UI.
+            feature from backend to frontend.
           </p>
           <p className="leading-relaxed">
             Outside of code I’m usually reading, staying active or listening music.

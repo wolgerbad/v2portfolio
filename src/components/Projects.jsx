@@ -148,17 +148,13 @@ export default function Projects() {
   ];
   return (
     <section id="projects" className="scroll-mt-24">
-      <header className="mb-8 flex flex-col gap-2">
+      <header className="mb-6 flex flex-col gap-2">
         <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
           Selected work
         </p>
         <h2 className="text-2xl sm:text-3xl font-semibold text-slate-50">
           Portfolio projects
         </h2>
-        <p className="max-w-2xl text-sm sm:text-base text-slate-400">
-          Real products shipped with authentication, databases and clean,
-          maintainable frontends. Built with a focus on robustness, DX and user experience.
-        </p>
       </header>
 
       <div className="flex flex-col gap-6 sm:gap-8">

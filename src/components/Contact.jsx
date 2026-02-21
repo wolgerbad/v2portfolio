@@ -11,8 +11,7 @@ export default function Contact() {
           Let&apos;s build something
         </h2>
         <p className="mt-3 text-sm sm:text-base text-slate-300">
-          Whether it&apos;s a product team, an agency or a startup, I&apos;m open to roles
-          where I can ship user-facing features and own technical decisions.
+          Whether it&apos;s a product team, an agency or a startup, I&apos;m open to roles.
         </p>
 
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -33,8 +32,7 @@ export default function Contact() {
         </div>
 
         <p className="mt-4 text-[11px] text-slate-500">
-          Or reach out on LinkedIn — I&apos;m happy to walk through code, projects, and
-          how I work.
+          Feel free to reach out anytime.
         </p>
       </div>
     </section>
