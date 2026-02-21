@@ -9,16 +9,16 @@ export default function Hero() {
       className="grid grid-cols-1 md:grid-cols-[minmax(0,2fr)_minmax(0,1.35fr)] mb-16 sm:mb-20 lg:mb-24 scroll-mt-40 gap-10 md:gap-14"
     >
       <div className="order-2 md:order-1 flex flex-col gap-8">
-        <div className="inline-flex items-center gap-2 self-start rounded-full border border-slate-700/80 bg-slate-900/70 px-3 py-1 text-xs font-medium text-slate-300 shadow-[0_0_40px_rgba(56,189,248,0.25)]">
+        {/* <div className="inline-flex items-center gap-2 self-start rounded-full border border-slate-700/80 bg-slate-900/70 px-3 py-1 text-xs font-medium text-slate-300 shadow-[0_0_40px_rgba(56,189,248,0.25)]">
           <span className="h-1.5 w-1.5 rounded-full bg-sky-400 animate-pulse" />
           Building reliable web products
-        </div>
+        </div> */}
 
         <div className="space-y-4">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight">
             <span className="block text-slate-200">Emir Işık</span>
-            <span className="mt-1 block bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-300 bg-clip-text text-transparent">
-              Frontend & full‑stack developer
+            <span className="mt-1 block bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-300 bg-clip-text text-transparent pb-1.5">
+              Web Developer
             </span>
           </h1>
 
