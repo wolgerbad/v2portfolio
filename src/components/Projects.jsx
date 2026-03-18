@@ -1,6 +1,17 @@
 import { FaGithub } from 'react-icons/fa';
 import Card from './Card';
 import Project from './Project';
+import { motion } from 'motion/react';
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.18,
+      delayChildren: 0.1,
+    },
+  },
+};
 
 export default function Projects() {
   const projects = [
@@ -25,6 +36,55 @@ export default function Projects() {
       ],
       projectColor: 'bg-amber-600',
       demoLink: 'https://theaurora.vercel.app/',
+    },
+    {
+      name: 'Flowboard (beta)',
+      overview:
+        'A full-stack, SaaS-style Kanban board application built with Next.js, React, Express.js, and TypeScript that enables multiple organizations to manage projects within isolated workspaces. Features secure JWT-based authentication, real-time collaboration with Socket.io, role-based access control, drag-and-drop task management, and scalable multi-tenant architecture with optimized database design.',
+      stack: ['Nextjs', 'Node.js', 'Typescript', 'Nodejs', 'Express.js', 'MySQL', 'Socket.io'],
+      github: 'https://github.com/wolgerbad/multi-tenant-kanban',
+      image:
+        'https://rjmixcltcmxukccddxxt.supabase.co/storage/v1/object/public/image%20bucket/flowboard.png',
+      orderCart: 1,
+      orderImage: 2,
+      technicalDetails: [
+        'Built a web application to let users search, explore, and save recipes from different cuisines around the world.',
+        'Integrated a public recipe API to fetch detailed recipe data including ingredients, preparation steps, and images.',
+        'Implemented local state management to handle search results, favorites, and user interactions.',
+        'Added search functionality to filter recipes by keywords for faster and more accurate results.',
+        'Designed a simple and readable layout for browsing and viewing recipe details.',
+        'Styled the interface with TailwindCSS for clean user experience.',
+        'Focused on creating a smooth user experience with quick data fetching and clean navigation.',
+      ],
+      projectColor: 'bg-amber-600',
+      demoLink: 'https://multi-tenant-kanban.vercel.app/',
+    },
+    {
+      name: 'Moviecorn',
+      overview:
+        'Single-page movie and TV show discovery application featuring searchable content, user-curated favorites and client-side state management. Built with accessible routing, centralized global state and optimized data fetching with caching using React Query to deliver a fast, responsive experience.',
+      stack: [
+        'React',
+        'React Router',
+        'React Query',
+        'Redux Toolkit',
+        'TailwindCSS',
+      ],
+      image:
+        'https://rjmixcltcmxukccddxxt.supabase.co/storage/v1/object/public/blog_images/Gemini_Generated_Image_n1ciztn1ciztn1ci.png',
+      github: 'https://github.com/wolgerbad/moviecorn',
+      orderCart: 1,
+      orderImage: 2,
+      technicalDetails: [
+        'Built a single-page application to let users search, explore, and save movies and TV shows for easier discovery and organization.',
+        'Created a global state system to keep movie data, favorites, and user actions synchronized with Redux Toolkit.',
+        'Handled API data fetching and caching with React Query to reduce redundant network requests and improve performance.',
+        'Implemented client-side routing with React Router for fast navigation between search, d  etail, and favorites pages.',
+        'Integrated an external movie API to fetch up-to-date movie and TV show data with detailed information.',
+        'Styled the application with TailwindCSS to ensure a clean, responsive interface across all devices.',
+      ],
+      projectColor: 'bg-amber-900',
+      demoLink: 'https://moviecorn-one.vercel.app/',
     },
     {
       name: 'Habitland',
@@ -75,56 +135,6 @@ export default function Projects() {
       demoLink: 'https://next-react-blogapp.vercel.app/',
     },
     {
-      name: 'Moviecorn',
-      overview:
-        'Single-page movie and TV show discovery application featuring searchable content, user-curated favorites and client-side state management. Built with accessible routing, centralized global state and optimized data fetching with caching using React Query to deliver a fast, responsive experience.',
-      stack: [
-        'React',
-        'React Router',
-        'React Query',
-        'Redux Toolkit',
-        'TailwindCSS',
-      ],
-      image:
-        'https://rjmixcltcmxukccddxxt.supabase.co/storage/v1/object/public/blog_images/Gemini_Generated_Image_n1ciztn1ciztn1ci.png',
-      github: 'https://github.com/wolgerbad/moviecorn',
-      orderCart: 1,
-      orderImage: 2,
-      technicalDetails: [
-        'Built a single-page application to let users search, explore, and save movies and TV shows for easier discovery and organization.',
-        'Created a global state system to keep movie data, favorites, and user actions synchronized with Redux Toolkit.',
-        'Handled API data fetching and caching with React Query to reduce redundant network requests and improve performance.',
-        'Implemented client-side routing with React Router for fast navigation between search, d  etail, and favorites pages.',
-        'Integrated an external movie API to fetch up-to-date movie and TV show data with detailed information.',
-        'Styled the application with TailwindCSS to ensure a clean, responsive interface across all devices.',
-      ],
-      projectColor: 'bg-amber-900',
-      demoLink: 'https://moviecorn-one.vercel.app/',
-    },
-    {
-      name: 'Trello Like',
-      overview:
-        'Trello-inspired task management application featuring authenticated users, structured boards, columns, cards and optimistic UI updates for instant drag-and-drop interactions. Built with a relational PostgreSQL backend and a responsive interface designed for smooth, real-time task organization.',
-      stack: ['Next.js', 'Better Auth', 'PostgreSQL'],
-      github: 'https://github.com/wolgerbad/trello-like',
-      image:
-        'https://xjlakfmpndqhejusdjij.supabase.co/storage/v1/object/public/images/Gemini_Generated_Image_9597vq9597vq9597.png',
-      orderCart: 2,
-      orderImage: 1,
-      technicalDetails: [
-        'Built a Trello-inspired task management application to let users organize tasks across boards, columns, and cards.',
-        'Developed with Next.js using the App Router and server actions to handle all CRUD operations securely on the server side.',
-        'Connected the app to a PostgreSQL database on Supabase, maintaining structured relations across board, column, and card tables.',
-        'Implemented authentication and session management with Better Auth, integrated into the PostgreSQL database via Prisma ORM.',
-        'Handled database responses and errors on the client side based on the results returned from the server.',
-        'Added optimistic UI updates to make drag-and-drop interactions and card edits reflect instantly before server confirmation.',
-        'Styled the interface with TailwindCSS for clean user experience.',
-        'Deployed the application on Vercel with environment variables for secure database and API connections.',
-      ],
-      projectColor: 'bg-sky-600',
-      demoLink: 'https://trello-like-kappa.vercel.app/',
-    },
-    {
       name: 'Recipedia',
       overview:
         'Recipe discovery application featuring searchable recipes, saved favorites and client-side state updates for a smooth browsing experience. Built with API-driven data fetching and a clean, readable interface focused on easy navigation and usability.',
@@ -146,16 +156,27 @@ export default function Projects() {
       projectColor: 'bg-amber-600',
       demoLink: 'https://recipe-app-ten-flax.vercel.app/',
     },
-
   ];
+
   return (
     <div id="projects" className="scroll-mt-20">
-      <h1 className="text-2xl font-bold mb-4 underline uppercase">Projects</h1>
-      <div className="flex flex-col gap-8">
+      <header className="flex flex-col gap-2">
+        <h2 className="font-bold text-2xl mb-4">
+          Portfolio projects
+        </h2>
+      </header>
+
+      <motion.div
+        className="flex flex-col gap-6 sm:gap-8"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         {projects.map((project) => (
           <Project key={project.name} project={project} />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

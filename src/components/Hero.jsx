@@ -8,12 +8,17 @@ import {
   FaReact,
 } from 'react-icons/fa';
 import { SiJavascript, SiTypescript } from 'react-icons/si';
+import { motion } from 'motion/react';
 
 export default function Hero() {
   return (
-    <div
+    <motion.div
       id="home"
       className="grid grid-cols-1 md:grid-cols-3 mb-15 sm:mb-20 lg:mb-30 scroll-mt-40 gap-4 md:gap-8 text-center md:text-start"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
     >
       <div className="order-2 md:order-1 md:col-start-1 md:col-span-2 flex flex-col gap-10 justify-between">
         <div>
@@ -91,6 +96,6 @@ export default function Hero() {
           src="https://rjmixcltcmxukccddxxt.supabase.co/storage/v1/object/public/blog_images/bb039930-ef9b-4afe-ba67-d74c421d97cb.jpg"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
