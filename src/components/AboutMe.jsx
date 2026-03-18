@@ -26,8 +26,9 @@ export default function AboutMe() {
           <p>
           Outside of code I’m usually reading, staying active or listening music. If you’re curious about what I listen to while I work, you can check out my             <a
               href="https://open.spotify.com/user/21gjhghjhkkymdu4fxn5ta3py"
-              className="group text-neutral-700 transition-all duration-300 ease-in-out font-medium cursor-pointer"
+              className="group text-sky-200 transition-all duration-300 ease-in-out font-medium cursor-pointer"
               target="_blank"
+              rel="noreferrer"
             >
               <span className="text-green-700 bg-bottom-left bg-linear-to-r from-green-800 to-green-800 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                 spotify

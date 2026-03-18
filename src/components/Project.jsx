@@ -74,7 +74,7 @@ export default function Project({ project, scrollYProgress }) {
             </a>
           </div>
 
-          <p className="text-gray-800 mt-1 text-sm sm:text-base">{overview}</p>
+          <p className="text-gray-800 mt-1 text-base sm:text-base">{overview}</p>
         </div>
         <div className="flex gap-2 flex-wrap text-slate-100">
           {stack.map((stack, idx) => (
