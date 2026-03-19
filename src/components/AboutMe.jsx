@@ -21,7 +21,6 @@ export default function AboutMe() {
           <p>
             My primary focus is on front-end technologies. Although, recently i've been going deeper into
              backend technologies in order to own a feature across both stacks.
-            across both stacks
           </p>
           <p>
           Outside of code I’m usually reading, staying active or listening music. If you’re curious about what I listen to while I work, you can check out my             <a
