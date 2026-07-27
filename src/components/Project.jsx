@@ -31,7 +31,10 @@ export default function Project({ project, scrollYProgress }) {
         rel: 'noopener noreferrer',
         href: demoLink,
       }
-    : { className: 'flex flex-col md:flex-row gap-4 md:p-8 p-4 rounded-lg group border border-gray-300' };
+    : {
+        className:
+          'flex flex-col md:flex-row gap-4 md:p-8 p-4 rounded-lg group border border-gray-300',
+      };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -51,7 +54,7 @@ export default function Project({ project, scrollYProgress }) {
       viewport={{ once: true, amount: 0.17 }}
       whileHover={{ y: -6 }}
     >
-          <div className="order-2 md:order-1 md:basis-[46%]">
+      <div className="order-2 md:order-1 md:basis-[46%]">
         <img
           src={image}
           alt={name}
@@ -74,7 +77,9 @@ export default function Project({ project, scrollYProgress }) {
             </a>
           </div>
 
-          <p className="text-gray-800 mt-1 text-base sm:text-base">{overview}</p>
+          <p className="text-gray-800 mt-1 text-base sm:text-base">
+            {overview}
+          </p>
         </div>
         <div className="flex gap-2 flex-wrap text-slate-100">
           {stack.map((stack, idx) => (
